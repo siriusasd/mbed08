@@ -32,7 +32,7 @@ def generate_negative_data(data):
 
   # Big movement -> around straight line
   for i in range(100):
-    dic = {config.DATA_NAME: [], config.LABEL_NAME: "negative"}
+    dic = {config.DATA_NAME: [], config.LABEL_NAME: "gogo"}
     start_x = (random.random() - 0.5) * 2000
     start_y = (random.random() - 0.5) * 2000
     start_z = (random.random() - 0.5) * 2000
@@ -49,7 +49,7 @@ def generate_negative_data(data):
 
   # Random
   for i in range(100):
-    dic = {config.DATA_NAME: [], config.LABEL_NAME: "negative"}
+    dic = {config.DATA_NAME: [], config.LABEL_NAME: "gogo"}
     for _ in range(config.seq_length):
       dic[config.DATA_NAME].append([(random.random() - 0.5) * 1000,
                              (random.random() - 0.5) * 1000,
@@ -58,7 +58,7 @@ def generate_negative_data(data):
 
   # Stay still
   for i in range(100):
-    dic = {config.DATA_NAME: [], config.LABEL_NAME: "negative"}
+    dic = {config.DATA_NAME: [], config.LABEL_NAME: "gogo"}
     start_x = (random.random() - 0.5) * 2000
     start_y = (random.random() - 0.5) * 2000
     start_z = (random.random() - 0.5) * 2000
